@@ -1,0 +1,11 @@
+services:
+  godot-builder:
+    tty: true
+    image: godot-builder:latest
+    volumes:
+       - /home/jole/Dokumente/GitHub/godot:/home/godot/godot
+
+# run all, then do:
+# docker exec -it godot-build-container-godot-builder-1 bash
+# or 
+# docker exec -it godot-build-container-godot-builder-1 scons dev_build=yes
